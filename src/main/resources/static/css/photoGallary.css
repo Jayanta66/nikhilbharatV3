@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+
+*{
+    margin:0;
+    padding:0;
+    bordre:0;
+    
+}
+
+.flex-container{
+
+  display: flex;
+  flex-wrap: wrap;
+   justify-content: space-around;
+  
+  background-color: DodgerBlue;
+  background-color: #f1f1f1;
+  width: 54%%;
+  text-align: center;
+}
+
+
+.responsive {
+	  display: flex;
+  flex-wrap: wrap;
+    justify-content: space-around;
+    
+  float: left;
+  width: 24.99999%;
+   height: 24.99999%;
+  
+}
+
+img{
+	
+	
+	width:600;
+	height:400;
+}

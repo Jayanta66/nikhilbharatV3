@@ -70,6 +70,9 @@ public class ImageGallery {
     @Column(name = "Image", length = Integer.MAX_VALUE, nullable = true)
     private byte[] image;
     
+	@Column(name = "presentAddress", nullable = true)
+	private String presentAddress;
+	
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "create_date", nullable = false)
     private Date createDate;
@@ -190,6 +193,14 @@ public class ImageGallery {
 		this.image = image;
 	}
 
+	public String getPresentAddress() {
+		return presentAddress;
+	}
+
+	public void setPresentAddress(String presentAddress) {
+		this.presentAddress = presentAddress;
+	}
+
 	public Date getCreateDate() {
 		return createDate;
 	}
@@ -203,10 +214,10 @@ public class ImageGallery {
 		return "ImageGallery [id=" + id + ", name=" + name + ", fathername=" + fathername + ", dob=" + dob
 				+ ", occupation=" + occupation + ", village=" + village + ", post=" + post + ", dist=" + dist
 				+ ", city=" + city + ", pin=" + pin + ", state=" + state + ", contact=" + contact + ", gender=" + gender
-				+ ", image=" + Arrays.toString(image) + ", createDate=" + createDate + "]";
+				+ ", image=" + Arrays.toString(image) + ", presentAddress=" + presentAddress + ", createDate="
+				+ createDate + "]";
 	}
 
-	
 
    
 }

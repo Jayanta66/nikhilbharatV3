@@ -69,6 +69,8 @@ public class ImageGalleryController {
 			@RequestParam("pin") String pin,
 			@RequestParam("contact") String contact,
 			@RequestParam("gender") String gender,
+			@RequestParam("presentAddress") String presentAddress,
+
 
 
 			
@@ -104,6 +106,8 @@ public class ImageGalleryController {
 			log.info("pin : "+pin);
 			log.info("gender : "+gender);
 			log.info("contact : "+contact);
+			log.info("presentAddress : "+presentAddress);
+
 
 
 			
@@ -143,7 +147,7 @@ public class ImageGalleryController {
 			imageGallery.setState(state);
 			imageGallery.setContact(contact);
 			imageGallery.setGender(gender);
-			
+			imageGallery.setPresentAddress(presentAddress);
 			imageGallery.setImage(imageData);
 
 			imageGallery.setCreateDate(createDate);
@@ -191,12 +195,13 @@ public class ImageGalleryController {
 					model.addAttribute("contact", imageGallery.get().getContact());
 					model.addAttribute("pin", imageGallery.get().getPin());
 					model.addAttribute("gender", imageGallery.get().getGender());
-
+					
 
 					model.addAttribute("city", imageGallery.get().getCity());
 		/*			model.addAttribute("price", imageGallery.get().getPrice()); */
 					model.addAttribute("state", imageGallery.get().getState());
 
+					model.addAttribute("presentAddress", imageGallery.get().getPresentAddress());
 					return "imagedetails";
 				}
 				return "redirect:/icard";

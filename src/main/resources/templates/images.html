@@ -16,7 +16,7 @@
 		Nikhil Bharat Bangali (Udbastu) Samanway Samiti ID-Card List <!--  a href="/"
 			class="btn btn-danger text-right">Go Home</a -->
 	</h1>
-	<h2 style="text-align:center">Reg : IV-190200734/2020</h2>
+	<h6 style="text-align:center">Reg : IV-190200734/2020</h6>
 	
 	<br>
 	<br>
@@ -37,7 +37,7 @@
 				<th>Dist</th>
 				<th>Contact</th>
 				<th>Pin</th>
-
+				<th>Present Address</th>
 
 				<th>Created date</th>
 				<th>Action</th>
@@ -63,6 +63,7 @@
 
 				<td th:text="${imageGallery.pin}"></td>
 
+				<td th:text="${imageGallery.presentAddress}"></td>
 
 
 				<td th:text="${#dates.format({imageGallery.createDate}, 'dd-MM-yyyy')}" /></td>

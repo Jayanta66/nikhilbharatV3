@@ -9,13 +9,13 @@ public class NikhilbharatV3Application {
 	public static void main(String[] args) {
 		SpringApplication.run(NikhilbharatV3Application.class, args);
 		//hellow       
-			//server name : nb
+			//server name : ssss
 		
-		//	admin Userame : nbbss
-		//	admin password: Lqm7ddO#s85P
+		//	admin Userame : nbbssssss
+		//	admin password: HF9K#aR!wJbo
 		
 	//	user name for cpanel : nikhilbharat
-	//	password : v]F+jMs(RnBK
+	//	password : %LauxvL#-ZDZ
 
 
 //	ns1.160-153-175-154.cprapid.com

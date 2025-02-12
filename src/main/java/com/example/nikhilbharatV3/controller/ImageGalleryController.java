@@ -49,7 +49,7 @@ public class ImageGalleryController {
 
 	private final Logger log = LoggerFactory.getLogger(this.getClass());
 
-	@GetMapping("/icard")
+	@GetMapping("/icardadsfw4pori3409wru8efuidsjfeer8u89ewur89ew89t7er98t7we89rip9ei0erjgi0fjg89erwut7er98thdfvjnckjbnr89wyterwi7t9eongkdfsjnvurwii7erhfoergnsdu9gyer89tu9ewrutoernjgerw89ew9rtuew09rtuew90rtjeriogw9er8w9t7e9rghdfogvjndfkjvn")
 	public String addProductPage() {
 		return "icard";
 	}

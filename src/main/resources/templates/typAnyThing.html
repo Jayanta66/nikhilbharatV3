@@ -36,7 +36,12 @@
 						<td th:text="${#dates.format({imageGallery.createDate}, 'dd-MM-yyyy')}" /></td>
 						
 										<td>
-					<!--  - th:href="@{'/typAnyThingEdit/' + ${imageGallery.id}}">Edit</a -->
+										
+										
+										
+					<a th:href="@{'/edit/' + ${imageGallery.id}}">Edit</a>
+										
+										
 					&nbsp;&nbsp;&nbsp;&nbsp;
 					<a th:href="@{'/delete/' + ${imageGallery.id}}">Delete</a>
 					<br><br>

@@ -21,10 +21,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 //import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.example.nikhilbharatV3.model.TypAnyThing;
 import com.example.nikhilbharatV3.service.TypAnyThingService;
@@ -32,6 +34,7 @@ import com.example.nikhilbharatV3.service.TypAnyThingService;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jobportal.beans.Job;
 
 
 
@@ -57,6 +60,11 @@ public class TypAnyThingController {
 	@GetMapping("/typAnyThing2")
 	public String addProductPage2() {
 		return "typAnyThing2";
+	}
+	
+	@GetMapping("/typAnyThingEdit")
+	public String typAnyThingEdit() {
+		return "typAnyThingEdit";
 	}
 
 	
@@ -153,6 +161,27 @@ public class TypAnyThingController {
 		List<TypAnyThing> images = imageGalleryService.getAllActiveImages();
 		map.addAttribute("images", images);
 		return "typAnyThing";
+	}
+	
+
+	
+	@RequestMapping("/edit/{id}")
+	public ModelAndView showEditProductForm(@PathVariable(name = "id") Long id) {
+		ModelAndView mav = new ModelAndView("typAnyThingEdit");
+		
+		Job product = imageGalleryService.get(id);
+		mav.addObject("product", product);
+		
+		return mav;
+	}	
+	
+	
+	
+	@RequestMapping("/delete/{id}")
+	public String deleteProduct(@PathVariable(name = "id") Long id) {
+		imageGalleryService.delete(id);
+		
+		return "redirect:/typAnyThing";
 	}
 }	
 

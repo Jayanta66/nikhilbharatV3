@@ -30,5 +30,14 @@ public class TypAnyThingService {
 	public Optional<TypAnyThing> getImageById(Long id) {
 		return imageGalleryRepository.findById(id);
 	}
+
+	public void delete(Long id) {
+		imageGalleryRepository.deleteById(id);
+		
+	}
+
+	public TypAnyThing get(Long id) {
+		return imageGalleryRepository.findById(id).get();
+	}
 }
 

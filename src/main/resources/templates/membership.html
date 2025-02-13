@@ -1,21 +1,586 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="ISO-8859-1">
-<title>nikhilbharat</title>
-    	<link rel="stylesheet" type="text/css" href="" th:href="@{/css/membership.css}">
+  <meta charset="utf-8">
+  <title>nikhilbharat</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
+  <!-- Favicons -->
+  <link href="revel/img/favicon.png" rel="icon">
+  <link href="revel/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="revel/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="revel/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="revel/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="revel/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="revel/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="revel/lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="revel/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="revel/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Reveal
+    Theme URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
 </head>
-<body class="b">
+
+<body id="body">
+
+  <!--==========================
+    Top Bar
+  ============================-->
+  <!-- section id="topbar" class="d-none d-lg-block">
+    <div class="container clearfix">
+      <div class="contact-info float-left">
+        <i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">https://nikhilbharat.co</a>
+        <i class="fa fa-phone"></i> +9100000000
+        
+         
+      </div>
+      <div class="social-links float-right">
+
+       <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        
+      </div>
+    </div>
+  </section> -->
+
+  <!--==========================
+    Header
+  ============================ -->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h6 style="color:blue; font-size:12px" ><a href="#body" style="color:blue" class="scrollto">Nikhil Bharat<span style="color:blue"> Bangali (Udbastu) Samanway Samiti</span></a></h6>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+        
+          <li class="menu-active"><a href="/">Home</a></li>
+         
+                    <li><a href="/membership">Membership</a></li>
+                                        <li><a href="/typAnyThing/show">Today Trends</a></li>
+                    
+          <li><a href="#about">About Us</a></li>
+          <!-- li><a href="#services">Services</a></li -->
+                    <li><a th:href="@{/indexSlider}">GALLARY</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <!-- li><a href="#team">Team</a></li -->
+          
+          <li class="menu-has-children"><a href="">All States(টিক চিহ্নে ক্লিক করুন)</a>
+            <ul>
+              <li><a th:href="@{/asm}">Assam</a></li>
+              <li><a th:href="@{/an}">Andaman and Nicobar Islands</a> </li>
+              <li><a th:href="@{/aAndn}">A&n</a></li>        
+              <li><a th:href="@{/bihar}">Bihar</a> </li>
+              <li><a th:href="@{/cg}">Chhattisgarh</a></li>
+              <li><a th:href="@{/delhi}">Delhi</a> </li>
+              <li><a th:href="@{/gujrat}">Gujrat</a></li>
+              <li><a th:href="@{/jh}">Jharkhand </a></li>
+              
+              <li><a th:href="@{/ka}">Karnataka</a></li>
+              
+              <li><a th:href="@{/mh}">Maharashtra</a></li>
+              <li><a th:href="@{/mp}">Madhya Pradesh</a></li>
+    
+              <li><a th:href="@{/od}">Odisa</a></li>
+              <li><a th:href="@{/te}">Te</a></li>
+              
+              <li><a th:href="@{/tri}">Tripura</a></li>
+              <li><a th:href="@{/up}">Uttar Pradesh</a></li>
+              <li><a th:href="@{/uk}">Uttar Khand</a></li>
+             <li><a th:href="@{/westBengal}">West Bengal</a></li>
+            
+            </ul>
+          </li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+  <!-- 
+<h5 style="color:blue">1 )যাদের নিখিলভারত এর ওয়েবসাইট ভিজিট করতে  অসুবিধা /   প্রবলেম  তারা  "How to use" বটন / অপশন এ ঢুকে দেখেন কি ভাবে  নিখিলভারত এর ওয়েবসাইট ভিজিট করবেন ।</h5>
+  
+ <h5 style="color:blue">2 ) Those who are having issue to visit nikhilbharat website please click on "How to use" button and follow the tutorials.
+</h5>
+
+<h5 style="color:blue">3 ) To get more things regarding us please click on "Home" button.
+</h5>
+
+ -->
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-content">
+      <h2 style="color:red">Nikhil <span style="color:red">Bharat Bangali</span><br>(Udbastu) Samanway Samiti</h2>
+      <div>
+      <h1>W E L C O M E</h1>
+<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Ph2lXVlvmiJLU2" async> </script> </form>
+        <a href="#about" class="btn-get-started scrollto">Get Started</a>
+        <a href="#portfolio" class="btn-projects scrollto">Our Projects</a>
+      </div>
+    </div>
+
+    <div id="intro-carousel" class="owl-carousel" >
+      <div class="item" style="background-image: url('images/barrackporeLockshobha/IMG_20190428_175247.jpg');"></div>
+      <div class="item" style="background-image: url('/images/barrackporeLockshobha/barrackpore.jpg');"></div>
+      <div class="item" style="background-image: url('/images/barrackporeLockshobha/IMG_20190428_175247.jpg');"></div>
+      <div class="item" style="background-image: url('/images/barrackporeLockshobha/IMG_20190428_161059__01.jpg');"></div>
+      <div class="item" style="background-image: url('/images/barrackporeLockshobha/IMG_20190422_133852.jpg');"></div>
+    </div>
+
+  </section><!-- #intro -->
+  
+  <!-- -- new post -->
 
 
-<h1>সদস্যপদ পেতে এই বোতামে ক্লিক করুন</h1>
-<div>
+  
+  <!-- end new post -->
 
-<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_PvGPkosicLcUJE" async> </script> </form>
-</div>
+  <main id="main">
+
+    <!--==========================
+      About Section
+    ============================-->
+    <section id="about" class="wow fadeInUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 about-img">
+            <img src="images/barrackporeLockshobha/IMG_20190428_175247.jpg" alt="">
+          </div>
+
+          <div class="col-lg-6 content">
+            <!--  h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
+            <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+
+            <ul>
+              <li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="ion-android-checkmark-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+            </ul -->
+
+<h2> To fight against the day to day injustice meted out to the Bengali refugee minority members coming over from the erstwhile East Pakistan/Bangladesh to India after partition.</h2>
+           the community members have decided to come together  under single banner. The Nikhil Bharat Bengali Udbastu Samanay Samiti was thus formed with the goal of freeing the community members of their woes and secure all over freedom with fundamental rights from the government at the respective states and the central government.  It is a matter of honour for the members, those Who have been working for the organization which came into existance  on to"' January 2010, It has not seen back, but marching ahead with added vigour and respect .The information was welcomed In all states by the communityth Sept,  members, The foundation stone of the Samiti was laid In Nagpur on 18"' Sept, 2005 With a get together/seminar of the  community members An ad-hoc committee was thus formed in this day, and Dr. Subodh Biswas was named as the convenor to chalk out the further plans. Its aim was to fight for their rights under one single banner throughout the country keeping In view the nation-wide problems being faced by the members.
 
 
+
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2> After formation of the central committee at the national level, the work of the organization picked up momentum.</h2>
+          <p> The community members, scattered in around 14 states,began to enrol themselves  with the national samiti. The committee thus took up the cause of its community members  and started to resolve the issues with the full support from its members.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInLeft">
+              <div class="icon"><i class="fa fa-bar-chart"></i></div>
+              <h4 class="title"><a href="">The works undertaken in the right ernest were:</a></h4>
+              <p class="description">
+              1) To demand re-assessment of the Citizenship Amendment Act 2003, 2) Permanent patta (land) and its ownership rights to those rehabilitated at different places/ and also issuance of pattas to those still detained in refugee camps, SC certificates to those refugee Bengalis, who belong to the same community, 4) Inclusion of names in the voters list omitted in UP and other States, who enjoyed the facility earlier. 5) To protect property of Bengali refugees settled in different states of India. The committee has also taken to see that those Hindu Bengali refugees, kept in the detention camps with alilegation of being Bangladeshi because they speak Bengali. Further, these people are not given chance to prove themselves innocent. They are facing wrath of being deported without any kind of judicial forum enquiry and any opportunity to prove their stand. This was the point where the Bengali refugees were hurt and the Samiti came into being to fight out the injustice meted out to them.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInRight">
+              <div class="icon"><i class="fa fa-picture-o"></i></div>
+              <h4 class="title"><a href="">After formation of the Central committee,</a></h4>
+              <p class="description">
+              
+              the organization started state level dharnas and seminars. The outcome of these programmes were positive in all manner. All the units in the respective participated in full strength to show their unity and support. The samiti is grateful go those who have poured in their labour to make these programmes a success.
+              
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="icon"><i class="fa fa-shopping-bag"></i></div>
+              <h4 class="title"><a href="">A national level conference was organized at Pillibhit on November and which was also a big success for the organization.</a></h4>
+              <p class="description">
+              
+               All the central committee members participated in the two-day programme . An open session was held on the concluding day attended by around 20,000 coming from across the country. After the two-programmes, the committee members forwarded their charter of demands to the UP Chief Minister Ms Mayawati and to the Governor of Uttar Pradesh.
+              
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInRight" data-wow-delay="0.2s">
+              <div class="icon"><i class="fa fa-map"></i></div>
+              <h4 class="title"><a href="">Later at Delhi, a two-day dharna programme was organized on November padyatra (rally) on November 23,</a></h4>
+              <p class="description">
+              
+               2011 from Samta Sthal to Jantar Mantar . Around 10,000 the community coming from all over the country took part in the rally. The rally culminated in a public meeting at the Jantar Mantar addressed by the members of the central leadership of the organization .
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #services -->
+
+    <!--==========================
+      Clients Section
+    ============================-->
+    <section id="clients" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Events</h2>
+          <!-- p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+           -->
+        </div>
+
+        <div class="owl-carousel clients-carousel">
+          <img src="/images/barrackporeLockshobha/IMG_20190428_175247.jpg" alt="">
+          <img src="/images/barrackporeLockshobha/IMG_20190428_161059__01.jpg" alt="">
+          <img src="/images/barrackporeLockshobha/IMG_20190422_133852.jpg" alt="">
+          <img src="/images/barrackporeLockshobha/IMG_20190422_121013.jpg" alt="">
+          <img src="/images/dumdumLockshobah/dumdum.jpg" alt="">
+          <img src="/images/dumdumLockshobah/IMG_20190501_181648__02.jpg" alt="">
+          <img src="/images/bangaonLockshobha/bangaon.jpg" alt="">
+          <img src="/images/bangaonLockshobha/bangaon2.jpg" alt="">
+        </div>
+
+      </div>
+    </section><!-- #clients -->
+
+    <!--==========================
+      Our Portfolio Section
+    ============================-->
+    <section id="portfolio" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Portfolio</h2>
+          <!-- p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p -->
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="portfolio-item wow fadeInUp">
+              <a href="/images/barrackporeLockshobha/IMG_20190428_175247.jpg" class="portfolio-popup">
+                <img src="/images/barrackporeLockshobha/IMG_20190428_175247.jpg" alt="">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-info"><h6 style="color:white" class="wow fadeInUp">Barrackpore Lockshobha</h6></div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="portfolio-item wow fadeInUp">
+              <a href="/images/barrackporeLockshobha/IMG_20190428_161059__01.jpg" class="portfolio-popup">
+                <img src="/images/barrackporeLockshobha/IMG_20190428_161059__01.jpg" alt="">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-info"><h6 style="color:white" class="wow fadeInUp">Barrackpore Lockshobha</h6></div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="portfolio-item wow fadeInUp">
+              <a href="/images/barrackporeLockshobha/IMG_20190428_175247.jpg" class="portfolio-popup">
+                <img src="/images/barrackporeLockshobha/IMG_20190428_175247.jpg" alt="">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-info"><h6 style="color:white" class="wow fadeInUp">Barrackpore Lockshobha</h6></div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="portfolio-item wow fadeInUp">
+              <a href="/images/barrackporeLockshobha/IMG_20190428_161059__01.jpg" class="portfolio-popup">
+                <img src="/images/barrackporeLockshobha/IMG_20190428_161059__01.jpg" alt="">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-info"><h6 style="color:white" class="wow fadeInUp">Barrackpore Lockshobha</h6></div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="portfolio-item wow fadeInUp">
+              <a href="/images/barrackporeLockshobha/IMG_20190422_133852.jpg" class="portfolio-popup">
+                <img src="/images/barrackporeLockshobha/IMG_20190422_133852.jpg" alt="">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-info"><h6 style="color:white" class="wow fadeInUp">Barrackpore Lockshobha</h6></div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="portfolio-item wow fadeInUp">
+              <a href="/images/barrackporeLockshobha/IMG_20190422_121013.jpg" class="portfolio-popup">
+                <img src="/images/barrackporeLockshobha/IMG_20190422_121013.jpg" alt="">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-info"><h6 style="color:white" class="wow fadeInUp">Barrackpore Lockshobha</h6></div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="portfolio-item wow fadeInUp">
+              <a href="/images/dumdumLockshobah/dumdum.jpg" class="portfolio-popup">
+                <img src="/images/dumdumLockshobah/dumdum.jpg" alt="">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-info"><h6 style="color:white" class="wow fadeInUp">Barrackpore Lockshobha</h6></div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="portfolio-item wow fadeInUp">
+              <a href="/images/dumdumLockshobah/IMG_20190501_181648__02.jpg" class="portfolio-popup">
+                <img src="/images/dumdumLockshobah/IMG_20190501_181648__02.jpg" alt="">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-info"><h6 style="color:white" class="wow fadeInUp">Barrackpore Lockshobha</h6></div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+    <!--==========================
+      Testimonials Section
+    ============================-->
+    <!-- section id="testimonials" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Testimonials</h2>
+          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+        </div>
+        <div class="owl-carousel testimonials-carousel">
+
+            <div class="testimonial-item">
+              <p>
+                <img src="revel/img/quote-sign-left.png" class="quote-sign-left" alt="">
+                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+              </p>
+              <img src="revel/img/testimonial-1.jpg" class="testimonial-img" alt="">
+              <h3>Saul Goodman</h3>
+              <h4>Ceo &amp; Founder</h4>
+            </div>
+
+            <div class="testimonial-item">
+              <p>
+                <img src="revel/img/quote-sign-left.png" class="quote-sign-left" alt="">
+                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+              </p>
+              <img src="revel/img/testimonial-2.jpg" class="testimonial-img" alt="">
+              <h3>Sara Wilsson</h3>
+              <h4>Designer</h4>
+            </div>
+
+            <div class="testimonial-item">
+              <p>
+                <img src="revel/img/quote-sign-left.png" class="quote-sign-left" alt="">
+                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+              </p>
+              <img src="revel/img/testimonial-3.jpg" class="testimonial-img" alt="">
+              <h3>Jena Karlis</h3>
+              <h4>Store Owner</h4>
+            </div>
+
+            <div class="testimonial-item">
+              <p>
+                <img src="revel/img/quote-sign-left.png" class="quote-sign-left" alt="">
+                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+              </p>
+              <img src="revel/img/testimonial-4.jpg" class="testimonial-img" alt="">
+              <h3>Matt Brandon</h3>
+              <h4>Freelancer</h4>
+            </div>
+
+            <div class="testimonial-item">
+              <p>
+                <img src="revel/img/quote-sign-left.png" class="quote-sign-left" alt="">
+                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+              </p>
+              <img src="revel/img/testimonial-5.jpg" class="testimonial-img" alt="">
+              <h3>John Larson</h3>
+              <h4>Entrepreneur</h4>
+            </div>
+
+        </div>
+
+      </div>
+    </section> <!-- #testimonials -->
+
+   
+    </section><!-- #call-to-action -->
+
+    <!--==========================
+      Our Team Section
+    ============================-->
+    <!-- section id="team" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Team</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="revel/img/team-1.jpg" alt=""></div>
+              <div class="details">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="revel/img/team-2.jpg" alt=""></div>
+              <div class="details">
+                <h4>Sarah Jhinson</h4>
+                <span>Product Manager</span>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="revel/img/team-3.jpg" alt=""></div>
+              <div class="details">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="revel/img/team-4.jpg" alt=""></div>
+              <div class="details">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section --><!-- #team -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+   
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Nikhil Bharat Bangali Samanwya Samiti</strong>.
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Reveal
+        -->
+        <a href="https://nikhilbharat.co/">Nikhil Bharat Bangali Samanwya Samiti</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="revel/lib/jquery/jquery.min.js"></script>
+  <script src="revel/lib/jquery/jquery-migrate.min.js"></script>
+  <script src="revel/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="revel/lib/easing/easing.min.js"></script>
+  <script src="revel/lib/superfish/hoverIntent.js"></script>
+  <script src="revel/lib/superfish/superfish.min.js"></script>
+  <script src="revel/lib/wow/wow.min.js"></script>
+  <script src="revel/lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="revel/lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="revel/lib/sticky/sticky.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="revel/contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="revel/js/main.js"></script>
 
 </body>
 </html>

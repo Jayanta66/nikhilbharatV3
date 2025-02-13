@@ -34,7 +34,6 @@ import com.example.nikhilbharatV3.service.TypAnyThingService;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import jobportal.beans.Job;
 
 
 
@@ -169,8 +168,8 @@ public class TypAnyThingController {
 	public ModelAndView showEditProductForm(@PathVariable(name = "id") Long id) {
 		ModelAndView mav = new ModelAndView("typAnyThingEdit");
 		
-		Job product = imageGalleryService.get(id);
-		mav.addObject("product", product);
+		TypAnyThing images = imageGalleryService.get(id);
+		mav.addObject("images", images);
 		
 		return mav;
 	}	

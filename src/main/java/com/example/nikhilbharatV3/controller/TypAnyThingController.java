@@ -52,6 +52,12 @@ public class TypAnyThingController {
 		return "typAnyThing";
 	}
 
+	
+
+	@GetMapping("/typAnyThing2")
+	public String addProductPage2() {
+		return "typAnyThing2";
+	}
 
 	
 	@PostMapping("/typAnyThing/saveImageDetails")

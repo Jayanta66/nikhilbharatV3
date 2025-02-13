@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>nikhilbharat</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/style.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<h1 class="text-center">
+		Nikhil Bharat Bangali (Udbastu) Samanway Samiti <a href="/" class="btn btn-danger text-right">Back</a>
+
+		<br> <br>
+
+	</h1>
+	<br>
+	<br>
+
+
+
+
+	<div class="contact py-sm-5 py-4">
+
+
+
+
+
+
+		<!--   #--------------------- ->
+		<div class="container py-xl-4 py-lg-2">
+		<!-- form -->
+		<form id="form" th:action="@{/typAnyThing/saveImageDetails}"
+			method="post">
+			<div class="contact-grids1 w3agile-6">
+				<div class="row">
+					<div class="col-md-6 col-sm-6 contact-form1 form-group">
+						<label class="col-form-label">Heading</label> <input type="text"
+							class="form-control" placeholder="Heading Required" id="name" name="name">
+						<p id="error_name"></p>
+					</div>
+					<div class="col-md-6 col-sm-6 contact-form1 form-group">
+						<label class="col-form-label">Description(Optional)</label> <input type="text"
+							class="form-control" placeholder="Text (optional)" id="typ" name="typ">
+						<p id="error_name"></p>
+					</div>
+					<div class="col-md-6 col-sm-6 contact-form1 form-group">
+						<label class="col-form-label">Image(Optional)</label> <input type="file"
+							class="form-control" placeholder="" name="image" id="image">
+						<p id="error_file"></p>
+					</div>
+
+
+				</div>
+
+				<div class="right-w3l col-md-6">
+					<input type="button" id="submit"
+						class="btn btn-primary form-control" value="Submit"> <br>
+					<br>
+				</div>
+				<a href="/typAnyThing/show" style="float: left;"
+					class="btn btn-success text-right">View</a>
+			</div>
+			<br>
+			<div id="success" class="text-center" style="color: green;"></div>
+			<div id="error" class="text-center" style="color: red;"></div>
+		</form>
+	</div>
+	</div>
+	<p class="text-center">
+		<img src="/images/loader.gif" alt="loader"
+			style="width: 150px; height: 120px;" id="loader">
+	</p>
+	<script src="/js/chat.js"></script>
+
+
+
+
+
+</body>
+</html>

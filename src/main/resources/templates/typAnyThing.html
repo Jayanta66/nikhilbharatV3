@@ -15,10 +15,14 @@
 
 </head>
 <body>
-	<h1 class="text-center">
-		Nikhil Bharat Bangali (Udbastu) Samanway Samiti <a href="/" class="btn btn-danger text-right">Back</a>
 
-		<div>
+
+	<h1 class="text-center">
+		Nikhil Bharat Bangali (Udbastu) Samanway Samiti</h1>
+		 <a href="/" class="btn btn-danger text-right">Back</a>
+		 <a href="/typAnyThing2" class="btn btn-danger text-right">New Post</a>
+
+		<div style="color:red">
 					<tr th:each="imageGallery, hh : ${images}"><br>
 
 						<td class="pic" th:text="${imageGallery.name}"></td><br>
@@ -27,11 +31,12 @@
 						<td class="pic">
 						<img
 							th:src="@{${'/typAnyThing/display/'+ imageGallery.id}}"
-							class="card img-fluid" style="width: 300px" alt="" /></td>
+							class="card img-fluid" style="width: 100%; height:40%;" alt="" /></td>
 						<br>
 						<td class="pic" th:text="${imageGallery.typ}"></td><br>
 						<td th:text="${#dates.format({imageGallery.createDate}, 'dd-MM-yyyy')}" /></td>
 
+<hr sytle="color:red; height:5px">
 
 		</div>
 

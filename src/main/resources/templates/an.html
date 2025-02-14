@@ -76,7 +76,20 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
         
-                <li><a th:href="@{/asm}">Assam</a></li>
+          <li class="menu-active"><a href="/">Home</a></li>
+          
+                    <li><a href="/membership">Membership</a></li>
+                                        <li><a href="/typAnyThing">Chat</a></li>
+                    
+          <li><a href="#about">About Us</a></li>
+          <!-- li><a href="#services">Services</a></li -->
+                    <li><a th:href="@{/indexSlider}">GALLARY</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <!-- li><a href="#team">Team</a></li -->
+          
+          <li class="menu-has-children"><a href="">All-State</a>
+            <ul>
+                    <li><a th:href="@{/asm}">Assam</a></li>
               <li><a th:href="@{/an}">Andaman and Nicobar Islands</a> </li>
               <li><a th:href="@{/aAndn}">A&n</a></li>        
               <li><a th:href="@{/bihar}">Bihar</a> </li>
@@ -96,8 +109,7 @@
               <li><a th:href="@{/tri}">Tripura</a></li>
               <li><a th:href="@{/up}">Uttar Pradesh</a></li>
               <li><a th:href="@{/uk}">Uttar Khand</a></li>
-             <li><a th:href="@{/westBengal}">West Bengal</a></li>
-                           
+             <li><a th:href="@{/westBengal}">West Bengal</a></li>              
             </ul>
           </li>
         </ul>
@@ -112,7 +124,6 @@
     <div class="intro-content">
       <h2 style="color:red">Nikhil <span style="color:red">Bharat Bangali</span><br>(Udbastu) Samanway Samiti</h2>
       <div>
-      
             <h1>Welcome to An</h1>
       
             		<form>
